@@ -8,7 +8,7 @@
 <body>
     <h1>Welcome to Our Website</h1>
     <p>Scan any website for security vulnerabilities:</p>
-    <form action="{% url 'scan_website' %}" method="post">
+    <form action="{% url 'home' %}" method="post">
         {% csrf_token %}
         <label for="target_url">Target URL:</label>
         <input type="text" id="target_url" name="target_url" required>
